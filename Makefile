@@ -41,7 +41,7 @@ $(OUT)/main : $(OUT)/main.o $(OUT)/a.o $(OUT)/b.o $(OUT)/c.o $(OUT)/lib_a.o $(OU
 	$(CC) -o $(OUT)/main $(OUT)/main.o $(OUT)/a.o $(OUT)/b.o $(OUT)/c.o $(OUT)/lib_a.o $(OUT)/lib_b.o
 
 $(OUT)/a.txt: b.txt c.txt
-	cat b.txt c.txt d.txt > a.txt
+	cat b.txt c.txt d.txt > out/a.txt
 
 clean :
 	rm -rf $(OUT)
