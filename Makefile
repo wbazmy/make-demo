@@ -21,15 +21,16 @@ $(OUT)/lib_a.o : lib_a/lib_a.c lib_a/lib_a.h
 $(OUT)/lib_b.o : lib_b/lib_b.c lib_b/lib_b.h
 	$(CC) -c -o $(OUT)/lib_b.o lib_b/lib_b.c
 
-# missing deps on lib_b/lib_b.h
+# missing deps on lib_b/lib_b.h lib_b/lib_b1.h e.h
 $(OUT)/a.o : a.c a.h
 	$(CC) -c -o $(OUT)/a.o a.c
 
+# missing deps on e.h
 # extra deps on c.h
 $(OUT)/b.o : b.c b.h a.h c.h
 	$(CC) -c -o $(OUT)/b.o b.c
 
-# missing deps on a.h, d.h
+# missing deps on a.h, d.h e.h
 $(OUT)/c.o : c.c c.h
 	$(CC) -c -o $(OUT)/c.o c.c
 
