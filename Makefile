@@ -41,7 +41,7 @@ $(OUT)/main.o : main.c
 $(OUT)/main : $(OUT)/main.o $(OUT)/a.o $(OUT)/b.o $(OUT)/c.o $(OUT)/lib_a.o $(OUT)/lib_b.o
 	$(CC) -o $(OUT)/main $(OUT)/main.o $(OUT)/a.o $(OUT)/b.o $(OUT)/c.o $(OUT)/lib_a.o $(OUT)/lib_b.o
 
-$(OUT)/a.txt: b.txt c.txt
+$(OUT)/a.txt: b.txt c.txt d.txt
 	cat b.txt c.txt d.txt > out/a.txt
 
 clean :
