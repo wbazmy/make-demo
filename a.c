@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "lib_b/lib_b.h"
 #include "a.h"
+#include "e.h"
 
 void a()
 {
