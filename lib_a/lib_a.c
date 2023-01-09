@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 #include "lib_a.h"
-#include "e.h"
 
 void lib_a()
 {
